@@ -32,16 +32,11 @@ npm run dev
 
 ## Deployment
 
-The project deploys automatically to GitHub Pages on every push to `main` via `.github/workflows/deploy.yml`. The workflow runs tests, builds, then publishes `dist/` using the official GitHub Pages Actions.
+**Live:** https://mcastig.github.io/multi-step-register-form-react/
 
-**One-time setup:** in your GitHub repo go to **Settings → Pages → Source** and select **GitHub Actions**.
+The project deploys automatically to GitHub Pages on every push to `main` via `.github/workflows/deploy.yml`. The workflow runs tests, builds, then publishes `dist/` using the official GitHub Pages Actions. GitHub Pages is auto-enabled by the workflow (`enablement: true`) — no manual setup required.
 
-The live URL will be:
-```
-https://<your-username>.github.io/multi-step-register-form-react/
-```
-
-> If your repository name differs from `multi-step-register-form-react`, update `base` in `vite.config.ts` to match.
+> If you fork this repo, update `base` in `vite.config.ts` to match your repository name.
 
 ## Stack
 

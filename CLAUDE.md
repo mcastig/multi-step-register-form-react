@@ -52,8 +52,11 @@ This is a **Vite + React 19 + TypeScript** project implementing a multi-step reg
 **Routing:** None installed. If individual steps need distinct URLs, add React Router or TanStack Router.
 
 **Deployment:**
+- Live at https://mcastig.github.io/multi-step-register-form-react/
 - Hosted on GitHub Pages via `.github/workflows/deploy.yml`
-- Triggers on push to `main` (also dispatchable manually)
+- Triggers on push to `main` (also dispatchable manually via `workflow_dispatch`)
 - Pipeline: `npm ci` → `npm test` → `npm run build` → upload `dist/` → deploy
+- `actions/configure-pages` runs with `enablement: true` — Pages is auto-enabled on first deploy, no repo settings change needed
+- `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true` env var is set at workflow level to opt into Node.js 24 action runtime ahead of the June 2026 forced migration
 - `vite.config.ts` sets `base: '/multi-step-register-form-react/'` — must match the GitHub repo name exactly or asset paths will break
-- `defineConfig` is imported from `vitest/config` (not `vite`) so TypeScript accepts the `test` key in the same config file
+- `defineConfig` is imported from `vitest/config` (not `vite`) so TypeScript accepts the `test` key alongside Vite config in the same file
