@@ -1,5 +1,7 @@
 # Multi-Step Registration Form
 
+**Live:** https://mcastig.github.io/multi-step-register-form-react/
+
 A multi-step registration form built with **Vite + React 19 + TypeScript**. Users fill in their name and email, select topics of interest, and review a summary before submitting.
 
 ## Features
@@ -31,8 +33,6 @@ npm run dev
 | `npm run test:coverage` | Run tests with coverage report |
 
 ## Deployment
-
-**Live:** https://mcastig.github.io/multi-step-register-form-react/
 
 The project deploys automatically to GitHub Pages on every push to `main` via `.github/workflows/deploy.yml`. The workflow runs tests, builds, then publishes `dist/` using the official GitHub Pages Actions. GitHub Pages is auto-enabled by the workflow (`enablement: true`) — no manual setup required.
 
