@@ -1,0 +1,33 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stepper__label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.stepper__dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stepper__dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--border-input);
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+}
+
+.stepper__dot--active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--purple-light);
+  box-shadow: 0 0 0 4px var(--bg-active-step);
+}

@@ -1,0 +1,25 @@
+.topic-card {
+  width: 100%;
+  padding: 18px 20px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-input);
+  border-radius: 14px;
+  color: var(--text-muted);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.topic-card:hover:not(.topic-card--selected) {
+  border-color: var(--purple-light);
+  color: var(--text-light);
+}
+
+.topic-card--selected {
+  background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple-light) 100%);
+  color: var(--text-white);
+  font-weight: 600;
+}

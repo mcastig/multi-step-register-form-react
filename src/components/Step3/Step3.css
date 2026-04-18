@@ -1,0 +1,47 @@
+.step3__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.step3__row {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.step3__key {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.step3__value {
+  color: var(--text-white);
+  font-weight: 700;
+}
+
+.step3__topics-section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.step3__topics-label {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.step3__topic-list {
+  list-style: disc;
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.step3__topic-item {
+  font-size: 1rem;
+  color: var(--text-white);
+  font-weight: 700;
+}
